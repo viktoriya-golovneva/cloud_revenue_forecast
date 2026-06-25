@@ -738,7 +738,7 @@ Recommended execution:
 
 ```bash
 pip install -r requirements.txt
-jupyter notebook main_en.ipynb
+jupyter notebook MAIN.ipynb
 ```
 
 Then run:
