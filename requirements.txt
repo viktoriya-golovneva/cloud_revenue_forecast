@@ -1,31 +1,15 @@
-from pathlib import Path
-
-requirements = """# Core data processing
-
+# Core data processing
 pandas>=2.2,<3.0
 
-# SQL engine used by the local db.py helper
-
+# SQL engine
 duckdb>=1.1,<2.0
 
 # Visualisation
-
 plotly>=5.24,<7.0
 
-# Static Plotly image export via fig.write_image(...)
-
+# Static Plotly image export
 kaleido>=0.2.1,<2.0
 
 # Notebook runtime
-
 jupyter>=1.1,<2.0
-
 ipykernel>=6.29,<7.0
-
-"""
-
-path = Path("/mnt/data/requirements.txt")
-
-path.write_text(requirements, encoding="utf-8")
-
-print(path.read_text())
